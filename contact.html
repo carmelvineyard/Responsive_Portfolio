@@ -5,70 +5,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Carmel V. Johnson</title>
+  <!--Bootstrap Stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--Local Stylesheets-->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
 <!--font for the logo-->
   <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-<!--Ok, so, here's the deal- nothing longer than "Carmel" would fit in the previous solution's code for the logo. So I went and found a font and made my name into an actual logo.-->
-	<div class="row">
-      <a href="index.html" class="col-s-12" id="logo">Carmel</a>
-      <nav class="col-s-12">
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-  	 </div> <!--row-->
-    </div><!--container-->
-  </header>
+  <!--Navbar-->
+  <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+         <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-12 phone-nav">
+              <a href="index.html" class="navbar-brand" id="logo">Carmel</a>
+            </div>
+          </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="index.html">About</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->  
 
-  <div id="main-container" class="container">
-    <section class="main-section col-s-11 col-m-12 col-6">
-      <h1>Contact</h1>
+  <!-- Start of content wrap -->
+    <div class="wrap">
+      <div class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <form class="contact-form">
+              <h1 class="contact-form-header">Contact</h1>
+              <hr class="contact-hr"/>
+              <div class="form-group">
+                <label class="label-name" for="name">Name</label>
+                <input type="text" id="name_input" name="user_name" placeholder="Jane Jones" required="required" />
+              </div>
+              <div class="form-group">
+                <label class="label-mail" for="mail">E-mail</label>
+                <input type="email" id="mail_input" name="user_mail" placeholder="example@domain.com" required="required" />
+              </div>
+              <div class="form-group">
+                <label class="label-msg" for="msg">Message</label><br />
+                <textarea id="msg" name="user_message_input" cols=600 required="required"></textarea>
+              </div>
+              <button class="submit-btn">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-4">
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Jones" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@domain.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+      <!-- Start of Connect With Me Area -->
+            <section id="connect-with-me-area">
+              <div class="connect-with-me-content">
+                <h1 class="connect-with-me-header">Connect With Me</h1>
+                <hr>
+                <div id="images">
+                  <a href="https://github.com/carmelvineyard"><img src="./assets/images/if_github_six_black_107112.png" class="connect-with-me-photo" alt="GitHub" /></a>
+                  <a href="https://www.linkedin.com/in/carmelvineyard"><img src="./assets/images/if_linkedin_hexa_11_107062.png" class="connect-with-me-photo" alt="LinkedIn" /></a>
+                  <a href="https://stackoverflow.com/users/8559957/carmelj"><img src="./assets/images/if_stackoverflow-hexagon-social-media_764792.png" class="connect-with-me-photo" alt="Stack Overflow" /></a>
+                </div>
+              </div>
+            </section>
 
-    </section><!--main-section-->
-
-	<section class="sidebar col-s-11 col-m-12 col-6">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="https://github.com/carmelvineyard"><img src="./assets/images/if_github_six_black_107112.png" class="social" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/carmelvineyard"><img src="./assets/images/if_linkedin_hexa_11_107062.png" class="social" alt="LinkedIn" /></a>
-        <a href="https://stackoverflow.com/users/8559957/carmelj"><img src="./assets/images/if_stackoverflow-hexagon-social-media_764792.png" class="social" alt="Stack Overflow" /></a>
+            <!-- End of the Connect With Me Area -->
+          </div>
+        </section>
       </div>
-    </section>
-
-	</div> <!--main-container-->
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 2017 Carmel V. Johnson
     </div>
-  </footer>
+    <!-- End of content wrap -->
 
-</body>
+  <!-- Start of footer -->
+    <footer class="footer">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        Copyright &copy; 2017 Carmel V. Johnson
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
 
 </html>
