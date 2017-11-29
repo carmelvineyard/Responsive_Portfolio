@@ -46,11 +46,13 @@ html {
 }
 
 .navbar-nav > li > a:hover {
-	color: #370061;
+	color: #550097;
 }
 
 /* Nav End */
 
+
+/********ABOUT/INDEX START***************/
 
 .about-me-header {
   /* Positioning */
@@ -62,6 +64,8 @@ html {
   font-weight: bold;
   color: #4aaaa5;
 }
+
+.about-me-hr {border-top: 1px solid #370061;}
 
 .about-me-content {
   /* Box-model */
@@ -82,7 +86,7 @@ html {
   /* Typography */
   font-size: 16px;
   line-height: 30px;
-  color: #bbc;
+  color: #370061;
 }
 
 #CVJimg {
@@ -96,8 +100,9 @@ html {
   margin-right: 20px;
 }
 
+/* ABOUT/INDEX END */
 
-/* footer */
+/* FOOTER BEGIN */
 
 .footer {
   position: absolute;
@@ -118,6 +123,9 @@ html {
   padding-top: 3px;
   background-color: #4aaaa5;
 }
+
+/*FOOTER END */
+
 
 /* CONNECT W/ ME CSS */
 
@@ -140,12 +148,15 @@ html {
   /* Positioning */
   margin-bottom: 15px;
   font-family: Georgia, Times, "Times New Roman", serif;
+  text-align: center;
 
   /* Typography */
   font-size: 25px;
   font-weight: bold;
   color: #4aaaa5;
 }
+
+.conn-hr {border-top: 1px solid #550097;}
 
 .connect-with-me-photo {
   width: 55px;
@@ -170,32 +181,30 @@ html {
 #portfolio-area {
   /* Box-model */
   width: 85%;
-  padding: 45px 10px 25px 31px;
-
+  padding: 35px 31px 25px 31px;
+  
   /* Positioning */
   margin-top: 30px;
-  margin-bottom: 200px;
-
+ 
   /* Visual */
   background-color: #fff;
 }
 
+.port-header {text-align: center;}
+
 .port-hr {
   margin-bottom: 40px;
-}
-
-.container {
-  position: relative;
+  border-top: 1px solid #550097;
 }
 
 .port-imgs {
   /* Box-model */
   width: 233px;
   height: 166px;
-  margin-right: 15px;
+  margin: 0px 15px 15px 0px;
+  border: 1px solid #4aaaa5;
 
   /* Positioning */
-  margin-bottom: 15px;
   z-index: -1;
 }
 
@@ -219,20 +228,26 @@ html {
   background: #4aaaa5;
 }
 
-/* --------END--------- */
-
-
+.work {
+  display: inline-block;
+  margin: 0px 15px 0px 20px;
+}
 
 .work h3:hover {
 	background-color: #377f7b;
-  
+    
+}
+
+.work a:visited {
+  color: #ccc;
 }
 
 .work a:hover {
   text-decoration: none;
+  color: #fff;
 }
 
-
+/* --------END--------- */
 
 /* CONTACT FORM CSS  */
 
@@ -242,7 +257,7 @@ html {
   width: 100%;
 
   /* Box-model */
-  padding: 45px 10px 25px 31px;
+  padding: 45px 31px 25px 31px;
 
   /* Positioning */
   margin-top: 30px;
@@ -293,7 +308,8 @@ html {
 }
 
 .contact-hr {
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
+  border-top: 1px solid #370061;
 }
 
 .submit-btn {
@@ -341,7 +357,7 @@ html {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
   .navbar-header {
     background-color: #4aaaa5;
   }
@@ -366,6 +382,18 @@ html {
     /* Visual */
     background: #4aaaa5;
   }
+  
+  /*portfolio only*/
+  .work {
+    margin: auto;
+    display: inline-block;
+  }
+
+  #portfolio-area {
+    margin: auto;
+    display: block;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -387,10 +415,19 @@ html {
   body {min-width: 320px;}
 	.row {display: block;}
 	#logo {width: 100%; margin-left: 0px;}
-  
+    
 /*portfolio only*/    
-  .work {width: 100%}
-  
+  .work {width: 100%; margin: auto;}
+  .port-header {text-align: center;}
+  #portfolio-area {margin: auto;}
+  #portfolio-area {
+  /* Box-model */
+  width: 85%;
+  padding: 35px 10px 25px 10px;}
+  .port-imgs {
+    margin: 0px 0px 15px 0px;
+  }
+    
 /*index only*/
   .auth-image {width: 100%;
       margin-bottom: 20px;}
