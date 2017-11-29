@@ -240,6 +240,7 @@ html {
 
 .work a:visited {
   color: #ccc;
+  text-decoration: none;
 }
 
 .work a:hover {
@@ -357,7 +358,7 @@ html {
 }
 
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 770px) {
   .navbar-header {
     background-color: #4aaaa5;
   }
