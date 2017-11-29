@@ -238,8 +238,13 @@ html {
     
 }
 
+.work a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
 .work a:visited {
-  color: #ccc;
+  color: #ddd;
   text-decoration: none;
 }
 
@@ -358,32 +363,19 @@ html {
 }
 
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 767px) {
+  body {min-width: 320px;}
+  .row {display: block;}
+  #logo {width: 100%; margin-left: 0px;}
+
   .navbar-header {
     background-color: #4aaaa5;
-  }
-
-  #logo {
     width: 100%;
-
-    /* Box-model */
-    height: 60px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-
-    /* Positioning */
-    margin-left: 0;
-    
-    /* Typography */
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-
-    /* Visual */
-    background: #4aaaa5;
   }
+
   
+
+   
   /*portfolio only*/
   .work {
     margin: auto;
