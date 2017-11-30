@@ -233,9 +233,9 @@ html {
   margin: 0px 15px 0px 20px;
 }
 
-.work h3:hover {
-	background-color: #377f7b;
-    
+.work a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .work a:active {
@@ -250,7 +250,7 @@ html {
 
 .work a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #ffefd7;
 }
 
 /* --------END--------- */
